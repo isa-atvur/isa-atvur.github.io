@@ -26,9 +26,15 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-theme: minima
 gems:
   - jekyll-feed
+  - jekyll-polyglot
 exclude:
   - Gemfile
   - Gemfile.lock
+include: ['_pages']
+
+languages: ["de", "tr"]
+default_lang: "en"
+exclude_from_localization: ["javascript", "images", "css"]
+parallel_localization: true
