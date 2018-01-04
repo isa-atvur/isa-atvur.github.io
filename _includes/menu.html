@@ -2,7 +2,7 @@
 <nav class="ink-navigation">
     <ul class="menu horizontal black">
       {% for page in sorted_pages %}
-        {% if page.title != "Impressum" and page.url != "/feed.xml" %}
+        {% if page.title != "Impressum" and page.url != "/feed.xml" and page.url != "/assets/css/style.css" %}
         <li><a href="{{page.url}}">{{page.title}}</a></li>
         {% endif %}
       {% endfor %}
