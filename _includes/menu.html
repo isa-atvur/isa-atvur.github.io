@@ -1,6 +1,7 @@
+{% assign sorted_pages = site.pages | sort:"order" %}
 <nav class="ink-navigation">
     <ul class="menu horizontal black">
-      {% for page in site.pages %}
+      {% for page in sorted_pages %}
         {% if page.title != "Impressum" %}
         <li><a href="{{page.url}}">{{page.title}}</a></li>
         {% endif %}
